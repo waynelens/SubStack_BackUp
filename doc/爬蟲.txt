@@ -1,0 +1,9 @@
+效能測試
+1. https://blog.darkthread.net/blog/handy-stopwatch-library/
+=> 額外寫實作IDisposable的計時class， 用using去包執行區塊
+=> 會有scope改變的問題，如果要改變測量的範圍，可能會要改寫code
+
+2. https://github.com/dotnet/BenchmarkDotNet、https://dotblogs.com.tw/abnerhsu/2019/03/11/155245
+=> .net benchmark library
+=> 怎麼做到只加attribute就執行測試的？
+=> 只能針對method做個別的測量
